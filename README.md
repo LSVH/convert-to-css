@@ -1,13 +1,13 @@
-# object-to-css
+# convert-to-css
 > Converts an object to (minified) css
 
-[![NPM](https://img.shields.io/npm/v/object-to-css.svg)](https://www.npmjs.com/package/object-to-css)
+[![NPM](https://img.shields.io/npm/v/convert-to-css.svg)](https://www.npmjs.com/package/convert-to-css)
 
 ## createCssRule(obj, prepend = '')
 > Create a css rule of an object of objects.
 
 ```js
-const objectToCss = require('object-to-css');
+const objectToCss = require('convert-to-css');
 
 const input = {
 	'.foo': {
@@ -29,7 +29,7 @@ objectToCss.createCssRule({foo:{}});
 > Create a css class of an object of objects.
 
 ```js
-const objectToCss = require('object-to-css');
+const objectToCss = require('convert-to-css');
 
 const input = {
 	foo: {
@@ -48,7 +48,7 @@ objectToCss.createCssClasses(input);
 > Create a css identifiers of an object of objects.
 
 ```js
-const objectToCss = require('object-to-css');
+const objectToCss = require('convert-to-css');
 
 const input = {
 	foo: {
@@ -67,7 +67,7 @@ objectToCss.createCssIdentifiers(input);
 > Create a css rule properties of an object.
 
 ```js
-const objectToCss = require('object-to-css');
+const objectToCss = require('convert-to-css');
 
 const input = {
 	padding: 10,

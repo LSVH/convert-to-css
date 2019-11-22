@@ -1,12 +1,13 @@
 {
-  "name": "object-to-css",
-  "version": "1.0.4",
-  "description": "Convert a JS object to CSS string. Similar to React's output of CSS, extracted into a module.",
+  "name": "convert-to-css",
+  "version": "1.0.0",
+  "description": "Converts JavasScript to a minified CSS string.",
   "main": "index.js",
   "scripts": {
     "test": "jest --watchAll"
   },
-  "author": "Nate Wienert",
+  "author": "LSVH",
+  "repository": "LSVH/convert-to-css",
   "license": "MIT",
   "dependencies": {
     "add-px-to-style": "^1.0.0",

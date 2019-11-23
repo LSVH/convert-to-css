@@ -1,5 +1,5 @@
 const addPx = require('add-px-to-style');
-const hyphenate = require('hyphenate-style-name');
+const hyphenate = require('hyphenate-style-name').default;
 
 function createCssRule(obj, prepend = '') {
   const keys = Object.keys(obj);
@@ -20,7 +20,7 @@ function createCssIdentifiers(obj) {
 
 function createCssProperties(obj) {
   const keys = Object.keys(obj);
-  return keys.length ? keys.map((key, i) => 
+  return keys.length ? keys.map((key, i) =>
     hyphenate(key) + ':' + addPx(key, obj[key]) + (i + 1 === keys.length ? '' : ';')
   ).join('') : '';
 }

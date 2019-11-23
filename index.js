@@ -1,5 +1,6 @@
 const addPx = require('add-px-to-style');
-const hyphenate = require('hyphenate-style-name').default;
+let hyphenate = require('hyphenate-style-name');
+hyphenate = typeof(hyphenate) === 'function' ? hyphenate : hyphenate.default;
 
 function createCssRule(obj, prepend = '') {
   const keys = Object.keys(obj);
